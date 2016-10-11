@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oA5-fe-onj"/>
+                        <viewControllerLayoutGuide type="bottom" id="BbU-N6-AEW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUu-pS-VKV">
+                                <rect key="frame" x="40" y="28" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="zJW-mi-qx8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8L-r1-NqF">
+                                <rect key="frame" x="100" y="269" width="120" height="30"/>
+                                <state key="normal" title="Local Notification">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendLocalNotificationWithoutAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Z5P-GC-pX9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgY-7B-wq7">
+                                <rect key="frame" x="59.5" y="307" width="201" height="30"/>
+                                <state key="normal" title="Local Notification with Action">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendLocalNotificationWithAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uPE-t0-45q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="SUu-pS-VKV" secondAttribute="centerX" id="5uc-cA-g2u"/>
+                            <constraint firstItem="SUu-pS-VKV" firstAttribute="top" secondItem="oA5-fe-onj" secondAttribute="bottom" constant="8" symbolic="YES" id="Bii-Qh-2jn"/>
+                            <constraint firstAttribute="centerY" secondItem="o8L-r1-NqF" secondAttribute="centerY" id="Z9x-Q9-kmN"/>
+                            <constraint firstAttribute="centerX" secondItem="o8L-r1-NqF" secondAttribute="centerX" constant="-0.5" id="bVC-ej-4yb"/>
+                            <constraint firstItem="SUu-pS-VKV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="bl4-hE-CVi"/>
+                            <constraint firstAttribute="centerX" secondItem="rgY-7B-wq7" secondAttribute="centerX" id="k0a-hM-Gii"/>
+                            <constraint firstItem="rgY-7B-wq7" firstAttribute="top" secondItem="o8L-r1-NqF" secondAttribute="bottom" constant="8" id="skc-83-5OC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="SUu-pS-VKV" id="rOv-oO-Zib"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
