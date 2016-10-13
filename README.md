@@ -6,5 +6,5 @@ Including topics:
   * Local notification with actions
   * Responding to the click of notifications
   * Responding to the selection of actions 
-  * Check local notifications in *[application:didFinishLaunchingWithOptions:]*
+  * Check local notifications in `[application:didFinishLaunchingWithOptions:]`
   
