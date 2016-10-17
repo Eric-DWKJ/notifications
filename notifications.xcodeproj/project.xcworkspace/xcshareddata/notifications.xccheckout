@@ -12,22 +12,34 @@
 	<dict>
 		<key>8D8AD77774036A54E8B9BC8601E0E1A7849F2B4E</key>
 		<string>https://github.com/AidySun/notifications-objc.git</string>
+		<key>C5C372B693F8F5B3B46C35E24747DD5428D74F82</key>
+		<string>https://github.com/AidySun/notifications.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>notifications.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8D8AD77774036A54E8B9BC8601E0E1A7849F2B4E</key>
+		<string>../..-objc</string>
+		<key>C5C372B693F8F5B3B46C35E24747DD5428D74F82</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/AidySun/notifications-objc.git</string>
+	<string>https://github.com/AidySun/notifications.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8D8AD77774036A54E8B9BC8601E0E1A7849F2B4E</string>
+	<string>C5C372B693F8F5B3B46C35E24747DD5428D74F82</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C5C372B693F8F5B3B46C35E24747DD5428D74F82</string>
+			<key>IDESourceControlWCCName</key>
+			<string>notifications</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

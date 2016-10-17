@@ -1,7 +1,7 @@
 # notifications
 A quite simple exercise about iOS local notifications.
 
-Including topics:
+Including Topics:
   * Scheduled local notification
   * Local notification with actions
   * Responding to the click of notifications
